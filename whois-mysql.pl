@@ -48,8 +48,8 @@ my @date_array;
 my $country;
 my $city;
 my $line_counter;
-my $mysql_account="root";
-my $mysql_password="edd1e123";
+my $mysql_account="longtail";
+my $mysql_password="password";
 
 ######################################################################
 #
