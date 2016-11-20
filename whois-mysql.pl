@@ -162,10 +162,12 @@ sub find_country {
                 or die "Couldn't prepare statement: " . $dbh->errstr;
 	$sth->execute() or die "execution failed: $dbh->errstr()";
 #	if ($DEBUG){print $sth->rows . " rows found.\n";}
+#
 	while (my $ref = $sth->fetchrow_hashref()) {
 	#	if ($DEBUG){print "Found a row: id = $ref->{'src_country_code'}\n";}
+		#print "Found a row: id = $ref->{'src_country_code'}\n";
 		$country_code= $ref->{'src_country_code'};
-	#	print "country: $country_code\n";
+		print "country: $country_code\n";
   	$sth->finish;
 		return; #Yeah, this isn't true structured programming....
 	}
