@@ -1,0 +1,14 @@
+	INSERT ignore INTO ip_to_country VALUES ('148.100.100.100','US' );
+	select count(*) from ip_to_country where ip='99.99.99.99';
+	yum install mysql and mysql-server
+	
+	git init
+	vi test.pl
+	git add test.pl
+	git commit test.pl
+	git remote add origin https://github.com/wedaa/testing
+	git push origin master
+	git pull 
+	git pull https://github.com/wedaa/testing
+	ls -lt
+	git push origin master
